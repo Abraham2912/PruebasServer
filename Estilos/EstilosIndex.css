@@ -1,0 +1,501 @@
+
+
+h2{
+    text-align: center;
+}
+/* Teléfonos Esto se borraria y luego las pantallas mas grandes se pondria min width y se cambiarian los estilos.*/
+.slide img{
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    z-index: -1;
+}
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 95vh;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: var(--strongYellow);
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background-color: var(--strongYellow);
+    color: var(--blue);
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    background-color: var(--blue);
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+    width: 10px;
+    height: 10px;
+    transition: all 1s;
+    border-radius: 50%;
+}
+
+.slide-circulo:hover {
+    background-color: var(--gray);
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+        li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+        li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+        li:nth-child(3) .slide-circulo {
+    background-color: var(--strongYellow);
+    border-radius: 10px;
+    width: 30px;
+}
+
+.slide-item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%);
+    color: var(--strongYellow);
+    text-shadow: 0px 0px 5px black;
+    font-size:30px;
+    text-align: center;
+}
+
+.noticias{
+    padding: 10px;
+}
+.noticias h3{
+    padding: 10px;
+    border-bottom: 3px solid var(--strongYellow);
+    width: fit-content;
+}
+.noticias article {
+    margin-top: 10px;
+}
+p{
+    padding: 10px;
+}
+.novedades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightYellow);
+}
+.importante{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+.noticia1{
+    grid-row:2/3;
+}
+.noticia2{
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+article{
+    display: flex;
+    flex-flow: column;
+    background-color: var(--lightYellow);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    padding: 10px;
+    color: var(--blue);
+}
+section img{
+    width: 1000px;
+}
+/* Seccion de guias */
+.fotosIslas{
+    padding: 10px;
+    background-image: url(../Imagenes/Ruta\ de\ los\ volcanes.jpg);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fotosIslas h2{
+    text-shadow: 0px 0px 10px black;
+    color: var(--strongYellow);
+}
+.fotosIslas h3, .fotosIslas p{
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.fotosIslas > div {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+.guiasIslas {
+    padding: 5px;
+    border-radius: 10px;
+    width: 17em;
+    border: 3px solid var(--lightYellow);
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+.LaPalma{
+    background-image: url(../Imagenes/La\ Palma\ Isla.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.Tenerife{
+    background-image: url(../Imagenes/Tenerife\ Isla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.ElHierro{
+    background-image: url(../Imagenes/El\ Hierro\ Isla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.LaGomera{
+    background-image: url(../Imagenes/La\ gomera\ Isla.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.GranCanaria{
+    background-image: url(../Imagenes/Gran\ Canaria\ Isla.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.Fuerteventura{
+    background-image: url(../Imagenes/Fuerteventura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.Lanzarote{
+    background-image: url(../Imagenes/Lanzarote\ Isla.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.LaGraciosa{
+    background-image: url(../Imagenes/La-Graciosa-Isla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+/*Section de catalogo*/
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightYellow);
+    padding: 10px;
+}
+.mercadillo-imagen{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mercadillo-imagen h2{
+    text-decoration: underline;
+    color: var(--blue);
+    text-shadow: 0px 0px 5px var(--brown);
+}
+.catalogo-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+.catalogo-destacados a{
+    height: fit-content;
+}
+.catalogo-destacados div{
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: var(--strongYellow);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    height: 16em;
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+}
+.catalogo-destacados img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.catalogo-destacados h3{
+    padding: 10px;
+}
+.catalogo-destacados p{
+    border-top: 1px solid var(--strongYellow);
+}
+.catalogo-destacados div{
+    transition: all .5s;
+}
+.catalogo-destacados div:hover{
+    transform: translateY(-10px);
+}
+
+/* Estilos de la publicación de instagram */
+.inst{
+    display: flex;
+    justify-content: space-around;
+}
+.inst > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--strongYellow);
+}
+/*Estilos generales*/
+/*Establecemos primero el minimo y luego vamos variando los estilos usando min widht*/
+/* Escritorio extra grande */
+@media screen and (min-width: 1200px){      
+    
+    /*Estilos noticias*/
+    .noticias{
+        margin: 10px 200px 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .noticias h3{
+        padding: 10px;
+        border-bottom: 3px solid var(--brown);
+        width: fit-content;
+    }
+    p{
+        padding: 10px;
+    }
+    .novedades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .importante{
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    .noticia1{
+        grid-row:2/3;
+    }
+    .noticia2{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    section img{
+        width: 1000px;
+    }
+    /* Seccion de guias */
+    .fotosIslas{
+        padding: 10px;
+        background-color: #428bca;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 99vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fotosIslas h2{
+        margin-top: 30px;
+    }
+    .fotosIslas h3, .fotosIslas p{
+        color: white;
+        text-shadow: 0px 0px 10px black;
+    }
+    .fotosIslas > div {
+        padding: 10px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        flex-wrap: wrap;
+    }
+    .guiasIslas {
+        padding: 5px;
+        border-radius: 10px;
+        width: 10em;
+        border: 1px solid black;
+        height: 15em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        text-align: center;
+    }
+    
+    
+    /*Section de catalogo*/
+    .catalogo{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .mercadillo-imagen{
+        width: 50%;
+        height: 30em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-image: url(../Imagenes/Mercadillo.jpg);
+        background-position: center;
+    }
+    .catalogo-destacados{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px;
+        /* background-color: #E5FDFE; */
+        /* background-color: ; */
+    }
+    .catalogo-destacados a{
+        height: fit-content;
+    }
+    .catalogo-destacados img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .catalogo-destacados h3{
+        padding: 10px;
+    }
+    .catalogo-destacados p{
+        border-top: 1px solid var(--strongYellow);
+    }
+    .catalogo-destacados div{
+        transition: all .5s;
+    }
+    .catalogo-destacados div:hover{
+        transform: translateY(-10px);
+    }
+    
+}
+/* Escritorio pequeño / tablet */
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+    /* Estilos de las noticias */
+    .noticias{
+        margin: 10px 200px 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .noticias h3{
+        padding: 10px;
+        border-bottom: 3px solid var(--lightYellow);
+        width: fit-content;
+    }
+    p{
+        padding: 10px;
+    }
+    .novedades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .importante{
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    .noticia1{
+        grid-row:2/3;
+    }
+    .noticia2{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    
+}
+

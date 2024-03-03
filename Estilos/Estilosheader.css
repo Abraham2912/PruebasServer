@@ -1,0 +1,191 @@
+:root{
+    --strongYellow: #F2C22E;
+    --gray: #687074;
+    --lightYellow: #EDC952;
+    --brown: #74482D;
+    --blue: #1A1349;
+}
+
+nav a:hover{
+    color: var(--brown);
+    text-shadow: none;
+}
+@media screen and (min-width: 1200px){  
+    header{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+    header h1{
+        font-family: 'Anton', sans-serif;
+        position: absolute;
+        font-size: 3em;
+        left: 50%;
+        transform: translatex(-50%);
+        top: 10px;
+        text-align: center;
+        font-size: 27px;
+        font-family: 'Open Sans', sans-serif;
+        z-index: 1;
+        /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33), 
+             -1px 0px 2px rgba(255, 255, 255, 0); */
+    }
+    ul{
+        list-style: none;
+    }
+    nav{
+        width: 100%;
+        background-color: var(--blue);
+    }
+    nav a{
+        padding: 1em;
+        display: block;
+        text-decoration: none;
+        color: var(--strongYellow);
+        width: 10em;
+        text-align: center;
+        transition: color 0.1s;
+        /* text-shadow: 1px 1px 1px black; */
+    }
+
+    nav > ul{
+        display: flex;
+        gap: 10px;
+        color: white;
+        justify-content: space-around;
+    }
+    li > ul{
+        display: none;
+    }
+    li:hover > ul{
+        display: block;
+        position: absolute;
+        background-color: var(--blue);
+        border: 1px solid black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    header{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+     header h1{
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        font-size: 27px;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33), 
+             -1px 0px 2px rgba(255, 255, 255, 0);
+    } 
+    ul{
+        list-style: none;
+    }
+    nav{
+        width: 100%;
+        background-color: var(--blue);
+    }
+    nav a{
+        padding: 1em;
+        display: block;
+        text-decoration: none;
+        color: var(--strongYellow);
+        width: 10em;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    li .arriba{
+        display: none;
+    }
+    li:hover .arriba{
+        display: inline;
+    }
+    li:hover .abajo{
+        display: none;
+    }
+    li{
+        transition: color 0.3s ;
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        justify-content: space-around;
+    }
+    li > ul{
+        display: none;
+    }
+    li:hover > ul{
+        display: block;
+        position: absolute;
+        background-color: var(--blue);
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+     header h1{
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+        font-size: 27px;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33), 
+             -1px 0px 2px rgba(255, 255, 255, 0);
+    } 
+    ul{
+        list-style: none;
+    }
+    nav{
+        width: 100%;
+        background-color: var(--blue);
+    }
+    nav a{
+        padding: 1em;
+        display: block;
+        text-decoration: none;
+        color: var(--strongYellow);
+        width: 10em;
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+    nav a:hover{
+        color: var(--brown);
+        text-shadow: none;
+    }
+    li .arriba{
+        display: none;
+    }
+    li:hover .arriba{
+        display: inline;
+    }
+    li:hover .abajo{
+        display: none;
+    }
+    li{
+        transition: color 0.3s ;
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: var(--strongYellow);
+        justify-content: space-around;
+    }
+    li > ul{
+        display: none;
+    }
+    li:hover > ul{
+        display: block;
+        position: absolute;
+        background-color: var(--brown);
+    }
+}

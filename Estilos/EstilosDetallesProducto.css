@@ -1,0 +1,64 @@
+main{
+    background-color: var(--lightYellow);
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.imagenPeque{
+    width: 32.98%;
+}
+main > div{
+    display: flex;
+}
+.detalles{
+    padding: 10px;
+    color: var(--blue);
+}
+table
+{
+    border: 1px solid var(--blue);
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+    border: 1px solid var(--blue);
+}
+button
+{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--strongYellow);
+}
+.aniadirCesta{
+    background-color: var(--gray);
+    color: var(--blue);
+}
+.resenias{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.resenias > div{
+    display: flex;
+    gap: 10px;
+}
+.resenias article{
+    width: 200px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: var(--strongYellow);
+    padding: 10px;
+}
+.resenias article h3{
+    border-bottom: 3px solid var(--lightYellow);
+}
+button:hover{
+    cursor: pointer;
+}

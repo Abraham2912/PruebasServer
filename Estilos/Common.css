@@ -1,0 +1,55 @@
+:root{
+    --strongYellow: #F2C22E;
+    --gray: #687074;
+    --lightYellow: #EDC952;
+    --brown: #74482D;
+    --blue: #1A1349; 
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/*para los estilos generales entre todas las páginas se podría hacer un common css. Que sería algo parecido a una libreria de bootstrap*/
+body{
+    background-color: var(--blue);
+}
+a{
+    color: var(--blue);
+    text-decoration: none
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botonAmarillo{
+    text-decoration: none;
+    color: black;
+    background-color: var(--strongYellow);
+    border: 1px solid var(--blue);
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    align-self: center;
+    transition: all 0.3s;
+}
+.botonAmarillo:hover{
+    background-color: var(--brown);
+}
+.botonGris{
+    text-decoration: none;
+    color: black;
+    background-color: var(--gray);
+    border: 1px solid var(--blue);
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    align-self: center;
+    transition: all 0.3s;
+}
+.botonGris:hover{
+    background-color: var(--brown);
+}

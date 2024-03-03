@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil de usuario</title>
+        <link rel="stylesheet" href="Estilos/Common.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Estilos/Estilosfooter.css">
+        <script src="https://kit.fontawesome.com/208a9d042d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Estilos/Estilosheader.css">
+        <link rel="stylesheet" href="Estilos/EstilosEditarPerfil.css">
+    </head>
+<body>
+    <header>
+        <!-- Podría poner este logo en el carrusel de fotos -->
+        <nav>
+            <ul>
+                <li><a href="Catalogo.html">Catalogo de productos</a></li>
+
+                <!-- hacer que la flecha sea solo una con una animación de transform para que gire -->
+                <li><a href=""> Guías turísticas <span class="abajo">↓</span><span class="arriba">↑</span></a>
+                    <ul>
+                        <li><a href="">La Palma</a></li>
+                        <li><a href="">El Hierro</a></li>
+                        <li><a href="">La Gomera</a></li>
+                        <li><a href="">Tenerife</a></li>
+                        <li><a href="">Gran Canaria</a></li>
+                        <li><a href="">Fuerteventura</a></li>
+                        <li><a href="">Lanzarote</a></li>
+                        <li><a href="">La Graciosa</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html"><h1>Canarias Experience</h1></a></li>
+                <li><a href="">Nuestra historia</a></li>
+                <li><a href="">Iniciar sesion</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <label for="GET-Name">Nombre:</label>
+                <input type="text" id="GET-Name" name="name">
+
+
+                <label for="GET-LastName">Apellidos</label>
+                <input type="text" name="lastName" id="GET-LastName">
+
+                <label for="GET-Email">Dirección de correo electrónico:</label>
+                <input type="email" name="email" id="GET-Email">
+
+                <label for="GET-Tel">Número de telefono:</label>
+                <input type="tel" name="tel" id="GET-Tel">
+
+                <label for="GET-Direction">Dirección de envio:</label>
+                <input type="text" name="direction" id="GET-Direction">
+
+                <label for="GET-IslandToVisit">¿Que isla te gustaría visitar?</label>
+                <select name="" id="GET-IslandToVisit">
+                    <option selected>Seleccione una isla</option>
+                    <option value="LaPalma">La Palma</option>
+                    <option value="ElHierro">El Hierro</option>
+                    <option value="LaGomera">La Gomera</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="GranCanaria">Gran Canaria</option>
+                    <option value="FuerteVentura">Fuerteventura</option>
+                    <option value="Lanzarote">Lanzarote</option>
+                    <option value="LaGraciosa">La Graciosa</option>
+                </select>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    </footer>
+</body>
+</html>
